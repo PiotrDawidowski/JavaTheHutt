@@ -1,0 +1,21 @@
+
+    public int Primitive() {
+        // Primitives:
+        int a = 5;
+        int b = a; // b gets a copy of 5
+        b = 10;
+        return a; // 5 → unchanged
+
+        // When you create primitive variable (a) and copy its value (a -> b), Java copies its value and they're independent (because int is primitive). Then, when you alter value of one of them, second one will remain unchanged.
+    }
+
+    public String[] Reference() {
+        String[] arr1 = {"A", "B"};
+        String[] arr2 = arr1;
+
+        System.out.println(arr1[0]);
+        arr2[0] = "Z";
+        System.out.println(arr2[0]);
+        System.out.println(arr1[0]);
+        return arr2;
+    }

@@ -1,0 +1,109 @@
+1. Machine code: where application turned into 0/1
+2. Stack: FIFO (like books, one goes on top and is first to leave)
+    2.1 Call stack: When you call a method, it will be added to a call stack; keeping track of local variables in local method
+3. Heap: You can access items in any order, because of that its more difficult to access them than to access stack elements.
+
+We can't access local variable from method because it is on call stack with a method, and is removed when method ends
+
+global variable always on eap
+class with variables in it: its gonna be on heap together with variables
+
+Garbage collector looks at heap that arent being used in heap (nothing points to it)
+
+reference type always on heap
+value types stack/heap
+
+static always on the heap
+
+anonymous functions can be created and called from inside another method. they have access to other methods and variables, because when it will be created at the top of the stack, it wont have access to variables lower on the stack.
+
+In async every thread has its own call stack
+
+----------------------------------------------------------------
+
+in JVM we run code.
+
+The areas in JVM are:
+- Stack (LIFO)
+- Heap (Open space)
+
+class Calculator
+{
+    int num;                            // instance variable
+
+    public int add(int a, int b)        // local variables
+    {
+        return a + b;
+    }
+}
+
+class Main
+{
+    public static void main(String[] a[]) {
+        int data = 10;
+        Calculator obj = new Calculator();
+        int r1 = obj.add(3, 4);
+        System.out.println(r1);
+    }
+}
+
+
+
+STACK (main):                 STACK (Calculate.add):             HEAP (addr: 101)
+    name of     value         name of     value                  num = 5
+    variable                  variable
+                                                                 add()
+    obj         101           n2          4
+    r1          7             n1          3
+    data        10
+
+
+
+What's happening? When we want to assign value to r1, we dont have add anywhere, it will create new stack for add(). In there we have n1 and n2 (in a stack). When we call it with values, it will assign these values in this second stack to n1 and n2.
+"Calculator obj" is NOT an object, it's a reference variable. It's being created in main stack, and it's gonna create an object in heap memory. First heap section will have all of the INSTANCE variable, because LOCAL variables are part of stacks.
+Every call of obj.add() starts from the stack. When we create obj, JVM allocates space for it, gives it a heap address (101) and initializes its num instance variable to 0. When we call add(3, 4), a new stack frame is created for the add method. Inside that frame, a is 3 and b is 4 - these are local variables stored on the stack. The method calculates and returns result.
+
+Then when we call add() by obj, obj points to the memory address it has allocated as value in a stack, and points to this memory in heap. (main stack ----> 101 Heap)
+
+
+----------------------------------------------------------------
+
+1. Instance variable: Stored in objects memory (heap), one copy per object
+
+class Person {
+    String name; // instance variable
+
+    Person(String name) {
+        this.name = name;
+    }
+}
+
+Person p1 = new Person("Alice");
+Person p2 = new Person("Bob");
+
+// p1.name and p2.name are stored in p1 and p2 separately
+
+2. Class variable (static): Stored in class's memory (in the method area of JVM, not each object)
+
+class Person {
+    static String species = "Human"; // class variable
+
+    String name;
+
+    Person(String name) {
+        this.name = name;
+    }
+}
+
+Person p1 = new Person("Alice");
+Person p2 = new Person("Bob");
+
+System.out.println(p1.species); // "Human"
+System.out.println(p2.species); // "Human"
+
+Person.species = "Homo sapiens";
+
+System.out.println(p1.species); // "Homo sapiens"
+System.out.println(p2.species); // "Homo sapiens"
+
+STATIC MAKES IT SO THAT VARIABLE FROM CLASS IS STORED IN JVM AREA FOR METHODS, NOT IN OBJECTS'S HEAP SPACES
