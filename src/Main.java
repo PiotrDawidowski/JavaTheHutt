@@ -1,6 +1,3 @@
-import JavaTutoApps.MadLibs_4;
-import JavaTutoClasses.*;
-
 public class Main {
     public static void main(String[] args) {
         // 2
@@ -9,7 +6,7 @@ public class Main {
 
         // 3
 //        new Scanner_3(); // works with constructor
-//        Scanner_3 obj3 = new Scanner_3(); // if you dont have an constructor
+//        Scanner_3 obj3 = new Scanner_3(); // if you dont have a constructor
 //        obj3.problemWithN(); // gosh darn input buffer
 
         // 4
