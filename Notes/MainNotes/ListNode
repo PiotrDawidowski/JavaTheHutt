@@ -1,0 +1,97 @@
+LeetCode problem 876 - Middle of the linked list
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+
+class Solution {
+    public ListNode middleNode(ListNode head) {
+
+    }
+}
+
+Head (first value and pointer to second node) is in stack memory, while pointer from this head points to heap. Without head in stack there is no collection.
+
+IDEA: we can iterate thru linnked list to get the length, if there is null we know that the node earlier was the last node, so we get its index etc.
+
+WAY 1: we iterate, copy values to an array, we halve total count
+Time complexity - O(n) (we iterate)
+Space complexity - O(n) (we copy the value)
+
+while we iterate we can assign ListNode next; as value of current head. !!!
+
+you can always increment when youre calculating somethings size/length, though it might not be very memory efficient i think.
+
+Code:
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode middleNode(ListNode head) {
+        ArrayList<ListNode> array = new ArrayList<>();
+        int length = 0;
+
+        while (head != null) {
+            array.add(head);
+            head = head.next;
+            length++;
+        }
+
+        return array.get(length/2);
+    }
+}
+
+so basically this approach is dogpoop because youre missing the point of a linked list, great.
+
+
+Second approach uses pointers. Thats the code:
+
+My own solution:
+class Solution {
+    public ListNode middleNode(ListNode head) {
+        ListNode middle = head;
+        ListNode end = head;
+        int iteration = 0;
+        while(head != null) {
+            head = head.next;
+            end = end.next;
+            if (iteration % 2 != 0) {
+                middle = middle.next;
+            }
+            iteration++;
+        }
+        return middle;
+    }
+}
+
+beat 13% in terms of memory :[
+
+now this is epic. You just do double jumps (when getting to the end with end) and one jump with middle note. When there are even elements in the  list, then end pointer jumps outside of ListNode, but it doesnt matter, it allows middle to go to the second mid. If there are is odd amount of elements, then end will just stop on last element and middle will stop on middle, and he loop wont start again because end.next will be null.
+
+class Solution {
+    public ListNode middleNode(ListNode head) {
+        ListNode middle = head;
+        ListNode end = head;
+        while (end != null && end.next != null) {
+            middle = middle.next;
+            end = end.next.next;
+        }
+        return middle;
+    }
+}
+
+crazy.
