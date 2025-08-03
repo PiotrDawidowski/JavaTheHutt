@@ -1,0 +1,22 @@
+Linked list is a data structure that stores elements in nodes, where each node contains:
+- data,
+- reference to the next AND previous node (in java, because java.util.LinkedList i  doubly linked)
+
+
+--- Implementation ---
+
+- LinkedList<E> is part of java.util
+- it implements:
+    - List<E>: behaves like a list,
+    - Deque<E>: can be used as Queue or Deque
+    - Cloneable and Serializable
+
+Each node contains:
+
+private static class Node<E> {
+    E item;         // value
+    Node<E> next;   // reference to next node
+    Node<E> prev;   // reference to previous node
+}
+
+LinkedList also keeps reference to the first and last element of the list
