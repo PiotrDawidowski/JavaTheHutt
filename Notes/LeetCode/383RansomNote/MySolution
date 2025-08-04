@@ -1,0 +1,52 @@
+class Solution {
+    public boolean canConstruct(String ransomNote, String magazine) {
+        boolean end = true;
+        int ransomSize = ransomNote.length();
+        int magazineSize = magazine.length();
+        int magazineSizeCheck = magazine.length();
+        int ix = 0;
+        int jx = 0;
+
+        while (!magazine.isEmpty()) {
+            for (int i = 0; i <= ransomSize; i++) {
+                for (int j = 0; j <= magazineSize; j++) {
+                    if (ransomNote.charAt(i) == magazine.charAt(j)) {
+                        magazine = magazine.substring(0, j) + magazine.substring(j + 1);
+                    }
+                    if (magazineSizeCheck != magazineSize) {
+                        continue;
+                    }
+                    else {end = false;}
+                }
+            }
+        }
+        return end;
+    }
+}
+
+doesnt work
+idk maybe ill fix it someday
+
+you can approach it with "for (char r : ransomNote.toCharArray())" but it uses O(n) space
+
+heres solution:
+
+class Solution {
+    public boolean canConstruct(String ransomNote, String magazine) {
+        for (int i = 0; i < ransomNote.length(); i++) { // 1
+            char r = ransomNote.charAt(i);
+
+            int matchingIndex = magazine.indexOf(r); // 2
+            if (matchingIndex == -1) {
+                return false; // 3
+            }
+
+            magazine = magazine.substring(0, matchingIndex) + magazine.substring(matchingIndex + 1);
+        }
+        return true;
+    }
+}
+
+1. we iterate normally thru ransomNote, for just assigningevery letter from ransomNote in order.
+2. indexOf(r) will return -1 if it doesnt find character from ransomNote in magazine, so we will know that we cant build ransomNote with letters from magazine.
+3. if we cant build ransomNote at any point, wqe just return false at this exact moment.
