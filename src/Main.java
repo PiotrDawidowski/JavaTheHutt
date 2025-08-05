@@ -1,3 +1,6 @@
+import JavaTutoApps.*;
+import JavaTutoClasses.*;
+
 public class Main {
     public static void main(String[] args) {
         // 2
@@ -12,5 +15,10 @@ public class Main {
         // 4
 //        new MadLibs_4();
 
+        // 6
+//        new ShoppingCart_6();
+
+        // 7
+        new If_7();
     }
 }
