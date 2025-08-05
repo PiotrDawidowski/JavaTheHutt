@@ -1,0 +1,17 @@
+My shot at this task:
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        HashMap<Integer, Integer> hash = new HashMap<>();
+
+        for (int i = 0; i < nums.length - 1; i++) {
+            Integer x = nums[i];
+            hash.put(x, 1);
+        }
+
+        nums = hash.keySet().stream().mapToInt(Integer::intValue).toArray();
+
+        return nums.length;
+    }
+}
+
+imo poorly defined requirement
