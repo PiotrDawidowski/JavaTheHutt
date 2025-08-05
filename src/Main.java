@@ -24,6 +24,6 @@ public class Main {
 //        new If_7();
 
         // 8
-
+        new Random_8();
     }
 }
