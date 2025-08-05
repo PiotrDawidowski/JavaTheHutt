@@ -13,5 +13,10 @@ public class Random_8 {
             double x = rand.nextDouble(100); // nextInt(inclusive, exclusive); if 1 is not filled and only 2 is filled then its 0, and if only one number then its the end of the range (randInt(100) 0-99.
             System.out.print(x + "\n");
         }
+
+        boolean isHeads = rand.nextBoolean();
+        for (int j = 0; j < 10; j++) {
+            System.out.println();
+        }
     }
 }
