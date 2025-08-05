@@ -24,6 +24,7 @@ class Solution {
     }
 }
 
+idk what I was doing
 doesnt work
 idk maybe ill fix it someday
 
@@ -49,4 +50,46 @@ class Solution {
 
 1. we iterate normally thru ransomNote, for just assigningevery letter from ransomNote in order.
 2. indexOf(r) will return -1 if it doesnt find character from ransomNote in magazine, so we will know that we cant build ransomNote with letters from magazine.
-3. if we cant build ransomNote at any point, wqe just return false at this exact moment.
+3. if we cant build ransomNote at any point, we just return false at this exact moment.
+
+Time complexity: O(nm) n: length of magazine, m: length of ransomNote
+Space complexity: O(n) because we store magazines copy in a variable. We dont countr char r because its constant and constants dont alter Big O notation
+
+--- HashMap solution ---
+
+Hashmap is a dictionary that stores values in key value pair. Just look at this and  youll get it:
+
+class Solution {
+    public boolean canConstruct(String ransomNote, String magazine) {
+        HashMap<Character, Integer> magazineLetters = new HashMap<>(); // 1
+
+        for (int i = 0; i < magazine.length();; i++) { // 2
+            char m = magazine.charAt(i); // 3
+
+            int currentCount = magazineLetters.GetOrDefault(m, 0); // 4
+            magazineLetters.put(m, currentCount + 1); // 5
+        }
+
+        for (int i = 0; i < ransomNote.length(); i++) {
+            char r = ransomNote.getChar(i); // 1
+
+            int currentCount = magazineLetters.getOrDefault(r, 0); // 6
+
+            if (currentCount == 0) {
+                return false; // 7
+            }
+
+            magazineLetters.put(r, currentCount - 1); // 8
+        }
+        return true;
+}
+
+1. we create hashmap with wrapped primitives (hashmap takes in only objects, wrapped primitives are objects
+2. we loop thru magazine, letter after letter
+3. we create and overwrite character variable with magazine's element,
+4. we get current count of the letter saved in "m", if it doesnt exist yet wew return 0, if it exists we increment the current count oof that letter.
+5. and now we put a new char:int pair (or we overwrite current value for the specific letter) and increment the counter for that letter.
+
+6. we check whether letter from ransomNote is still available (thanks to our hashmap),
+7. if it doesnt exist we can end here and return false (since we cannot complete the message because of the lack of letters),
+8. if there still are letters, then we take this letter out to "create" our note and decrement its count by 1.
