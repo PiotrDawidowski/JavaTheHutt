@@ -1,0 +1,39 @@
+maybe ill fix it someday
+public ShoppingCart_6() {
+        HashMap<String, Integer> cart = new HashMap<>();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome: Choose what you would like to add to the cart:");
+        String exit = "";
+        while (exit != "exit") {
+            System.out.println("Please choose an option:");
+            System.out.println("1. Add Item");
+            System.out.println("2. Remove Item");
+            System.out.println("3. Checkout");
+            String option = sc.nextLine();
+            switch (option) {
+                case "1": addItem(cart);
+                case "2": removeItem(cart);
+                case "3": checkout(cart); // just display cart; you could
+            }
+        }
+    }
+    public void addItem(HashMap <String, Integer> cart) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Please enter the name of the item you would like to add:");
+        String name = sc.nextLine();
+
+        System.out.println("Please enter the amount of the item you would like to add:");
+        int amount = sc.nextInt();
+
+        if (!cart.containsKey(name)) {
+            System.out.println("Item does not exist, it has been created and added to your cart.");
+            cart.put(name, cart.get(name) + amount);
+        }
+        else {
+            System.out.println("Item has been added to your cart.");
+            cart.put(name, cart.get(name) + amount);
+        }
+    }
+}
+    // wrapped values returned from HashMap are being unwrapped to their primitive tyope for any arithmetics
