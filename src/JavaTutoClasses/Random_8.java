@@ -14,9 +14,9 @@ public class Random_8 {
             System.out.print(x + "\n");
         }
 
-        boolean isHeads = rand.nextBoolean();
         for (int j = 0; j < 10; j++) {
-            System.out.println();
+            boolean isHeads = rand.nextBoolean();
+            System.out.println(isHeads);
         }
     }
 }
