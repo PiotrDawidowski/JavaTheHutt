@@ -1,5 +1,7 @@
 import JavaTutoApps.*;
 import JavaTutoClasses.*;
+import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,6 +21,9 @@ public class Main {
 //        new ShoppingCart_6();
 
         // 7
-        new If_7();
+//        new If_7();
+
+        // 8
+
     }
 }
