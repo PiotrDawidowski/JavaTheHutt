@@ -24,6 +24,9 @@ public class Main {
 //        new If_7();
 
         // 8
-        new Random_8();
+//        new Random_8();
+        // 9
+        new Arithmetics_9();
+
     }
 }
