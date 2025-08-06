@@ -1,0 +1,7 @@
+       // printf() is a method used to format output
+
+       // % [flags] [width] [.precision] [specifier-character]
+
+       // [specifier-character]
+
+       // [.precision] .3
