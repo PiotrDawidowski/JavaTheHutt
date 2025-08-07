@@ -30,8 +30,10 @@ public class Main {
 //        new Arithmetics_9();
 
         // 10
-        new Printf_10();
+//        new Printf_10();
 
+        // 11
+        new CompoundCalc_11();
     }
 }
 
