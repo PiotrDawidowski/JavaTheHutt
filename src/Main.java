@@ -33,7 +33,13 @@ public class Main {
 //        new Printf_10();
 
         // 11
-        new CompoundCalc_11();
+//        new CompoundCalc_11();
+
+        // 12
+//        new NestedIf_12();
+
+        // 13
+        new Strings_13();
     }
 }
 
