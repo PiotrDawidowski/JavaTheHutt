@@ -39,7 +39,10 @@ public class Main {
 //        new NestedIf_12();
 
         // 13
-        new Strings_13();
+//        new Strings_13();
+
+        // 14
+        new Substring_14();
     }
 }
 
