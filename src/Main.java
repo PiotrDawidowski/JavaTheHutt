@@ -48,7 +48,10 @@ public class Main {
 //        new WeightConverter_15();
 
         // 16
-        new Ternary_16();
+//        new Ternary_16();
+
+        // 17
+        new TempConverter_17();
     }
 }
 
