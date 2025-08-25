@@ -45,7 +45,10 @@ public class Main {
 //        new Substring_14();
 
         // 15
-        new WeightConverter_15();
+//        new WeightConverter_15();
+
+        // 16
+        new Ternary_16();
     }
 }
 
