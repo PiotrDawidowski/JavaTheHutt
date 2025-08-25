@@ -42,7 +42,10 @@ public class Main {
 //        new Strings_13();
 
         // 14
-        new Substring_14();
+//        new Substring_14();
+
+        // 15
+        new WeightConverter_15();
     }
 }
 
