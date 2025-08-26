@@ -10,13 +10,13 @@ public class WeightConverter_15 {
         System.out.println("1. kilograms");
         System.out.println("2. pounds");
 
-        switch (sc.nextInt()) {
-            case 1:
-                System.out.printf("%f kg is %f lbs", weight, weight*2.204);
-                break;
-            case 2:
-                System.out.printf("%f lbs is %f kg", weight, weight/2.204);
-        }
+//        switch (sc.nextInt()) {
+//            case 1:
+//                System.out.printf("%f kg is %f lbs", weight, weight*2.204);
+//                break;
+//            case 2:
+//                System.out.printf("%f lbs is %f kg", weight, weight/2.204);
+//        }
 
 //        switch(sc.nextInt()) {
 //            case 1 -> System.out.printf("%f kg is %f lbs", weight, weight*2.204);
