@@ -51,7 +51,7 @@ public class Main {
 //        new Ternary_16();
 
         // 17
-        new TempConverter_17();
+//        new TempConverter_17();
     }
 }
 
