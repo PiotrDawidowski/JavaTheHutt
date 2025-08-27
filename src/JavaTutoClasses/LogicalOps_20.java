@@ -31,7 +31,7 @@ public class LogicalOps_20 {
         System.out.println("Enter username: ");
         username = sc.nextLine();
 
-        if(username.contains(" ") || username.contains("_")) {
+        if(username.indexOf(' ') == -1 || username.indexOf('_') == -1) {
             System.out.println("Username must not contain spaces or underscores");
         }
         else if(username.length() > 12 || username.length() < 8) {
