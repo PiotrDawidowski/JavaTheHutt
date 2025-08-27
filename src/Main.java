@@ -57,7 +57,7 @@ public class Main {
 //        new EnhSwitch_18();
 
         // 19
-        new Calculator_19();
+//        new Calculator_19();
     }
 }
 
