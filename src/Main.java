@@ -52,6 +52,12 @@ public class Main {
 
         // 17
 //        new TempConverter_17();
+
+        // 18
+//        new EnhSwitch_18();
+
+        // 19
+        new Calculator_19();
     }
 }
 
