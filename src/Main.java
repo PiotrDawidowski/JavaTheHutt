@@ -60,7 +60,10 @@ public class Main {
 //        new Calculator_19();
 
         // 20
-        new LogicalOps_20();
+//        new LogicalOps_20();
+
+        // 21
+        new While_21();
     }
 }
 
