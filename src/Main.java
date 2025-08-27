@@ -58,6 +58,9 @@ public class Main {
 
         // 19
 //        new Calculator_19();
+
+        // 20
+        new LogicalOps_20();
     }
 }
 
