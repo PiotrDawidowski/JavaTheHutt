@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         // 2
 //        Variables_2 obj2 = new Variables_2();
 //        obj2.Info();
@@ -66,7 +66,10 @@ public class Main {
 //        new While_21();
 
         // 22
-        new NumberGuesser_22();
+//        new NumberGuesser_22();
+
+        // 23
+        new ForLoops_23();
     }
 }
 
