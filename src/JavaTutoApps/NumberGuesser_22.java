@@ -9,9 +9,12 @@ public class NumberGuesser_22 {
 
         int guess = 0;
         int attempts = 0;
+        int min = 1;
+        int max = 100;
         int rand = random.nextInt(1, 11);
 
         System.out.println("Welcome to number guessing game.");
+        System.out.printf("Guess a number between %d-%d.\n", min, max);
 
         do {
             System.out.println("Take a guess: ");
