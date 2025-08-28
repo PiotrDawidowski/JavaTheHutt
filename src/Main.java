@@ -63,7 +63,10 @@ public class Main {
 //        new LogicalOps_20();
 
         // 21
-        new While_21();
+//        new While_21();
+
+        // 22
+        new NumberGuesser_22();
     }
 }
 
