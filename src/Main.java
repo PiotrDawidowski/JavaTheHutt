@@ -72,7 +72,10 @@ public class Main {
 //        new ForLoops_23();
 
         // 24
-        new BreakContinue_24();
+//        new BreakContinue_24();
+
+        // 25
+        new NestedLoops_25();
     }
 }
 
