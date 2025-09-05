@@ -69,7 +69,10 @@ public class Main {
 //        new NumberGuesser_22();
 
         // 23
-        new ForLoops_23();
+//        new ForLoops_23();
+
+        // 24
+        new BreakContinue_24();
     }
 }
 
