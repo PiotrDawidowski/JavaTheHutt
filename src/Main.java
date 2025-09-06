@@ -75,7 +75,10 @@ public class Main {
 //        new BreakContinue_24();
 
         // 25
-        new NestedLoops_25();
+//        new NestedLoops_25();
+
+        // 26
+        new Methods_26();
     }
 }
 
