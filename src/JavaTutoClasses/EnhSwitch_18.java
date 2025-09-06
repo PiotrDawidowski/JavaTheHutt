@@ -6,7 +6,7 @@ public class EnhSwitch_18 {
         Scanner sc = new Scanner(System.in);
         String day = sc.nextLine();
 
-        switch(day) {
+//        switch(day) {
 //            case "Monday" -> System.out.println("Today is a weekday.");
 //            case "Tuesday" -> System.out.println("Today is a weekday.");
 //            case "Wednesday" -> System.out.println("Today is a weekday.");
@@ -14,11 +14,27 @@ public class EnhSwitch_18 {
 //            case "Friday" -> System.out.println("Today is a weekday.");
 //            case "Saturday" -> System.out.println("Today is a weekend!");
 //            case "Sunday" -> System.out.println("Today is a weekend!");
+//        }
 
-            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" -> System.out.println(day + " is a weekday.");
-            case "Saturday", "Sunday" -> System.out.println(day + " is a weekend!");
-            default -> System.out.println(day + " is not a day");
-        }
+//        switch (day) {
+//            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" -> System.out.println(day + " is a weekday.");
+//            case "Saturday", "Sunday" -> System.out.println(day + " is a weekend!");
+//            default -> System.out.println(day + " is not a day");
+//        }
+        // TODO show how yield works
+
+        String response = switch(day) {
+            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" -> {
+                yield "It's a weekday.";
+            }
+            case "Saturday", "Sunday" -> {
+                yield "It's a weekend!";
+            }
+            default -> {
+                yield "not a valid name for a weekday.";
+            }
+        };
+        System.out.println(response);
         sc.close();
     }
 }
