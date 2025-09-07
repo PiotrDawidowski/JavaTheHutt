@@ -1,0 +1,20 @@
+Variables are local to their curly braces. Java will use variables that are "closer", so between:
+- a variable local to a method
+and
+- a variable static to a class where the method exists
+then Java will take the closest variable.
+
+public class VariableScope_28 {
+    String num = "3";
+    public VariableScope_28() {
+        int num = 67;
+        System.out.println(returnNum());
+    }
+
+    public int returnNum() {
+//        int num = 1;
+        return num;
+    }
+}
+
+In this example, returnNum doesnt have any local variable named "num", and the closest one is the num from the class. Because its of the type other than return type of that method, it will result in a error
