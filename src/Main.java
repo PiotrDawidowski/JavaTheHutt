@@ -93,7 +93,13 @@ public class Main {
 //        new DiceRoll_30();
 
         // 31
-        new Arrays_31();
+//        new Arrays_31();
+
+        // 32
+//        new ArrayInput_32();
+
+        // 33
+
     }
 }
 
