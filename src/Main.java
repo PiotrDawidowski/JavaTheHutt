@@ -87,7 +87,13 @@ public class Main {
 //        new VariableScope_28();
 
         // 29
-        new BankingApp_29();
+//        new BankingApp_29();
+
+        // 30
+//        new DiceRoll_30();
+
+        // 31
+        new Arrays_31();
     }
 }
 
