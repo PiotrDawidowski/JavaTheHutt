@@ -99,7 +99,10 @@ public class Main {
 //        new ArrayInput_32();
 
         // 33
+        new SearchArray_33();
 
+        // 34
+//        new
     }
 }
 
