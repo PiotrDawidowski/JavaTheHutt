@@ -105,7 +105,10 @@ public class Main {
 //        new Varargs_34();
 
         // 35
-        new TwoDimArrays_35();
+//        new TwoDimArrays_35();
+
+        // 36
+        new Quiz_36();
     }
 }
 
