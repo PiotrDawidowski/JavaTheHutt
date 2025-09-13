@@ -102,7 +102,10 @@ public class Main {
 //        new SearchArray_33();
 
         // 34
-        new Varargs_34();
+//        new Varargs_34();
+
+        // 35
+        new TwoDimArrays_35();
     }
 }
 
