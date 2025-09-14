@@ -9,6 +9,8 @@ public class RockPaperScissors_37 {
     static String[] possibleChoices = {"rock", "paper", "scissors"};
     static String computersChoice;
     static boolean isFinished = false;
+    static int userScore = 0;
+    static int computerScore = 0;
 
     public RockPaperScissors_37() {
         mainLogic();
@@ -42,9 +44,17 @@ public class RockPaperScissors_37 {
                     (usersChoice.equals("scissors") && computersChoice.equals("paper")) ||
                     (usersChoice.equals("paper") && computersChoice.equals("rock"))) {
                 System.out.println("You win");
+                userScore++;
             }
             else {
                 System.out.println("You lose...");
+                computerScore++;
+            }
+            System.out.printf("Current score is %d to %d.%n", userScore, computerScore);
+            System.out.print("Do you want to play again? (yes/no): ");
+
+            if (sc.nextLine().equals("no")) {
+                isFinished = true;
             }
         } while(!isFinished);
     }
