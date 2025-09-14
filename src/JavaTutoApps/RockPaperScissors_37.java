@@ -44,7 +44,7 @@ public class RockPaperScissors_37 {
                 System.out.println("You win");
             }
             else {
-                System.out.println("YOu lose...");
+                System.out.println("You lose...");
             }
         } while(!isFinished);
     }
