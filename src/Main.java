@@ -108,7 +108,10 @@ public class Main {
 //        new TwoDimArrays_35();
 
         // 36
-        new Quiz_36();
+//        new Quiz_36();
+
+        // 37
+        new RockPaperScissors_37();
     }
 }
 
