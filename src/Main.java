@@ -1,5 +1,6 @@
 import JavaTutoApps.*;
 import JavaTutoClasses.*;
+import JavaTutoOOP.*;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -117,22 +118,34 @@ public class Main {
 //        new SlotsMachine_38();
 
         // 39
-        OOP_39 oop39 = new OOP_39();
-        OOP_39.Car car = oop39.new Car();
-        System.out.println(car); // memory address since object is on heap (reference type)
-        System.out.println(car.make);
-        System.out.println(car.model);
-        System.out.println(car.year);
-        System.out.println(car.price);
-        System.out.println(car.isRunning);
+//        OOP_39 oop39 = new OOP_39();
+//        OOP_39.Car car = oop39.new Car();
+//        System.out.println(car); // memory address since object is on heap (reference type)
+//        System.out.println(car.make);
+//        System.out.println(car.model);
+//        System.out.println(car.year);
+//        System.out.println(car.price);
+//        System.out.println(car.isRunning);
+//
+//        car.isRunning = true;
+//        System.out.println(car.isRunning);
+//
+//        car.start();
+//        System.out.println(car.isRunning);
+//        car.stop();
+//        System.out.println(car.isRunning);
 
-        car.isRunning = true;
-        System.out.println(car.isRunning);
+        // 40
+//        Constructors_40 con40 = new Constructors_40();
+//        Constructors_40.Student student1 = con40.new Student("Spongebob", 23, 3.2);
+//        Constructors_40.Student student2 = con40.new Student("Patrick", 32, 2.1);
+//        Constructors_40.Student student3 = con40.new Student("Sandy", 29, 4.0);
 
-        car.start();
-        System.out.println(car.isRunning);
-        car.stop();
-        System.out.println(car.isRunning);
+//        System.out.println(student1.name);
+//        System.out.println(student1.age);
+//        System.out.println(student1.gpa);
+//        System.out.println(student1.isEnrolled);
+//        student1.Study();
     }
 }
 
