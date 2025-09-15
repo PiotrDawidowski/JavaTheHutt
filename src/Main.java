@@ -111,7 +111,13 @@ public class Main {
 //        new Quiz_36();
 
         // 37
-        new RockPaperScissors_37();
+//        new RockPaperScissors_37();
+
+        // 38
+//        new SlotsMachine_38();
+
+        // 39
+
     }
 }
 
