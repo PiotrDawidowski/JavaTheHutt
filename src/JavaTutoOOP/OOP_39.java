@@ -1,4 +1,4 @@
-package JavaTutoClasses;
+package JavaTutoOOP;
 
 public class OOP_39 {
     // NESTED CLASS
