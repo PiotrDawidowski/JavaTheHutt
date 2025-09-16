@@ -146,6 +146,41 @@ public class Main {
 //        System.out.println(student1.gpa);
 //        System.out.println(student1.isEnrolled);
 //        student1.Study();
+
+        // 41
+//        OverloadedConstructors_41 oc41 = new OverloadedConstructors_41();
+//        OverloadedConstructors_41.User user1 = oc41.new User("Spongebob");
+//        OverloadedConstructors_41.User user2 = oc41.new User("Patrick", "patr1ck@mail.com");
+//        OverloadedConstructors_41.User user3 = oc41.new User("Sandy", "s4ndy@mail.com", 28);
+//        OverloadedConstructors_41.User user4 = oc41.new User();
+//
+//        System.out.println(user4.username);
+//        System.out.println(user4.email);
+//        System.out.println(user4.age);
+
+        // 42
+        ArrayOfObjects_42 aoo42 = new ArrayOfObjects_42();
+        ArrayOfObjects_42.Car car1 = new ArrayOfObjects_42.Car("Focus", "Blue");
+        ArrayOfObjects_42.Car car2 = new ArrayOfObjects_42.Car("Jazz", "Teal");
+        ArrayOfObjects_42.Car car3 = new ArrayOfObjects_42.Car("Ibiza", "Yellow");
+
+        ArrayOfObjects_42.Car[] cars = {car1, car2, car3};
+
+        for (int i = 0; i < cars.length; i++) {
+            cars[i].drive();
+        }
+
+        for (ArrayOfObjects_42.Car car : cars) {
+            car.drive();
+        }
+
+        for (ArrayOfObjects_42.Car car : cars) {
+            car.color = "Black";
+        }
+
+        for (ArrayOfObjects_42.Car car : cars) {
+            car.drive();
+        }
     }
 }
 
