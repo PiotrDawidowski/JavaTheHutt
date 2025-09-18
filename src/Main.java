@@ -191,6 +191,14 @@ public class Main {
 //
 //        System.out.println(Static_43.Friend.numOfFriends);
 //        Static_43.Friend.showFriends();
+
+        // 44
+        Inheritance_44 inh44 = new Inheritance_44();
+        Inheritance_44.Dog dog = new Inheritance_44.Dog();
+        Inheritance_44.Cat cat = new Inheritance_44.Cat();
+        Inheritance_44.Plant plant = new Inheritance_44.Plant();
+
+        plant.photosynthesize();
     }
 }
 
