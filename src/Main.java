@@ -159,28 +159,38 @@ public class Main {
 //        System.out.println(user4.age);
 
         // 42
-        ArrayOfObjects_42 aoo42 = new ArrayOfObjects_42();
-        ArrayOfObjects_42.Car car1 = new ArrayOfObjects_42.Car("Focus", "Blue");
-        ArrayOfObjects_42.Car car2 = new ArrayOfObjects_42.Car("Jazz", "Teal");
-        ArrayOfObjects_42.Car car3 = new ArrayOfObjects_42.Car("Ibiza", "Yellow");
+//        ArrayOfObjects_42 aoo42 = new ArrayOfObjects_42();
+//        ArrayOfObjects_42.Car car1 = new ArrayOfObjects_42.Car("Focus", "Blue");
+//        ArrayOfObjects_42.Car car2 = new ArrayOfObjects_42.Car("Jazz", "Teal");
+//        ArrayOfObjects_42.Car car3 = new ArrayOfObjects_42.Car("Ibiza", "Yellow");
+//
+//        ArrayOfObjects_42.Car[] cars = {car1, car2, car3};
+//
+//        for (int i = 0; i < cars.length; i++) {
+//            cars[i].drive();
+//        }
+//
+//        for (ArrayOfObjects_42.Car car : cars) {
+//            car.drive();
+//        }
+//
+//        for (ArrayOfObjects_42.Car car : cars) {
+//            car.color = "Black";
+//        }
+//
+//        for (ArrayOfObjects_42.Car car : cars) {
+//            car.drive();
+//        }
 
-        ArrayOfObjects_42.Car[] cars = {car1, car2, car3};
-
-        for (int i = 0; i < cars.length; i++) {
-            cars[i].drive();
-        }
-
-        for (ArrayOfObjects_42.Car car : cars) {
-            car.drive();
-        }
-
-        for (ArrayOfObjects_42.Car car : cars) {
-            car.color = "Black";
-        }
-
-        for (ArrayOfObjects_42.Car car : cars) {
-            car.drive();
-        }
+        // 43
+//        Static_43 st43= new Static_43();
+//        Static_43.Friend friend1 = new Static_43.Friend("Smough");
+//        Static_43.Friend friend2 = new Static_43.Friend("Ornnstein");
+//        Static_43.Friend friend3 = new Static_43.Friend("Bayle");
+//        Static_43.Friend friend4 = new Static_43.Friend("Gaping Dragon");
+//
+//        System.out.println(Static_43.Friend.numOfFriends);
+//        Static_43.Friend.showFriends();
     }
 }
 
