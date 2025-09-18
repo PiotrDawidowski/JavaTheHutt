@@ -12,7 +12,7 @@ public class Static_43 {
         }
 
         public static void showFriends() {
-            System.out.println("You have" + numOfFriends + " total friends.");
+            System.out.println("You have " + numOfFriends + " total friends.");
         }
     }
 }
