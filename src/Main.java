@@ -222,18 +222,39 @@ public class Main {
 //        System.out.println(car);
 
         // 48
-        Abstraction_48 abs48 = new Abstraction_48();
+//        Abstraction_48 abs48 = new Abstraction_48();
 //      CANNOT INSTANTIATE ABSTRACT CLASS
 //        Abstraction_48.Shape shape = new Abstraction_48.Shape();
-        Abstraction_48.Circle circle = new Abstraction_48.Circle(5);
-        Abstraction_48.Triangle triangle = new Abstraction_48.Triangle(4, 7);
-        Abstraction_48.Rectangle rectangle = new Abstraction_48.Rectangle(6, 3);
+//        Abstraction_48.Circle circle = new Abstraction_48.Circle(5);
+//        Abstraction_48.Triangle triangle = new Abstraction_48.Triangle(4, 7);
+//        Abstraction_48.Rectangle rectangle = new Abstraction_48.Rectangle(6, 3);
+//
+//        System.out.println(circle.area());
+//        System.out.println(triangle.area());
+//        System.out.println(rectangle.area());
 
-        System.out.println(circle.area());
-        System.out.println(triangle.area());
-        System.out.println(rectangle.area());
+        // 49
+//        Interfaces_49 int49 = new Interfaces_49();
+//        Interfaces_49.Rabbit rabbit = new Interfaces_49.Rabbit();
+//        rabbit.flee();
+//        Interfaces_49.Fish fish = new Interfaces_49.Fish();
+//        fish.flee();
+//        fish.hunt();
+//        Interfaces_49.Hawk hawk = new Interfaces_49.Hawk();
+//        hawk.hunt();
+
+        // 50
+        Polymorphism_50 pol50 = new Polymorphism_50();
+        Polymorphism_50.Vehicle car = new Polymorphism_50.Car();
+        Polymorphism_50.Bike bike = new Polymorphism_50.Bike();
+        Polymorphism_50.Boat boat = new Polymorphism_50.Boat();
 
 
+        Polymorphism_50.Vehicle[] vehicles = {car, bike, boat};
+
+        for(Polymorphism_50.Vehicle vehicle : vehicles) {
+            vehicle.go();
+        }
     }
 }
 
