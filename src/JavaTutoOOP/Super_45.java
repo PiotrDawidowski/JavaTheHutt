@@ -41,7 +41,6 @@ public class Super_45 {
 
         public void showSalary() {
             System.out.println("Salary: " + this.salary);
-
         }
     }
 }
