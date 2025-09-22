@@ -210,13 +210,16 @@ public class Main {
 //        employee1.showName(); employee1.showSalary();
 
         // 46
-        MethodOverride_46 meov46 = new MethodOverride_46();
-        MethodOverride_46.Cat cat = new MethodOverride_46.Cat();
-        cat.move();
-        MethodOverride_46.Fish fish = new MethodOverride_46.Fish();
-        fish.move();
+//        MethodOverride_46 meov46 = new MethodOverride_46();
+//        MethodOverride_46.Cat cat = new MethodOverride_46.Cat();
+//        cat.move();
+//        MethodOverride_46.Fish fish = new MethodOverride_46.Fish();
+//        fish.move();
 
-
+        // 47
+        toString_47 tostr47 = new toString_47();
+        toString_47.Car car = new toString_47.Car("Ford", "Mustang", 2025, "red");
+        System.out.println(car);
     }
 }
 
