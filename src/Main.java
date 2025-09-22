@@ -217,9 +217,23 @@ public class Main {
 //        fish.move();
 
         // 47
-        toString_47 tostr47 = new toString_47();
-        toString_47.Car car = new toString_47.Car("Ford", "Mustang", 2025, "red");
-        System.out.println(car);
+//        toString_47 tostr47 = new toString_47();
+//        toString_47.Car car = new toString_47.Car("Ford", "Mustang", 2025, "red");
+//        System.out.println(car);
+
+        // 48
+        Abstraction_48 abs48 = new Abstraction_48();
+//      CANNOT INSTANTIATE ABSTRACT CLASS
+//        Abstraction_48.Shape shape = new Abstraction_48.Shape();
+        Abstraction_48.Circle circle = new Abstraction_48.Circle(5);
+        Abstraction_48.Triangle triangle = new Abstraction_48.Triangle(4, 7);
+        Abstraction_48.Rectangle rectangle = new Abstraction_48.Rectangle(6, 3);
+
+        System.out.println(circle.area());
+        System.out.println(triangle.area());
+        System.out.println(rectangle.area());
+
+
     }
 }
 
