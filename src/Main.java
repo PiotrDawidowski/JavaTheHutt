@@ -193,12 +193,22 @@ public class Main {
 //        Static_43.Friend.showFriends();
 
         // 44
-        Inheritance_44 inh44 = new Inheritance_44();
-        Inheritance_44.Dog dog = new Inheritance_44.Dog();
-        Inheritance_44.Cat cat = new Inheritance_44.Cat();
-        Inheritance_44.Plant plant = new Inheritance_44.Plant();
+//        Inheritance_44 inh44 = new Inheritance_44();
+//        Inheritance_44.Dog dog = new Inheritance_44.Dog();
+//        Inheritance_44.Cat cat = new Inheritance_44.Cat();
+//        Inheritance_44.Plant plant = new Inheritance_44.Plant();
+//
+//        plant.photosynthesize();
 
-        plant.photosynthesize();
+        // 45
+        Super_45 sup45 = new Super_45();
+        Super_45.Person person1 = new Super_45.Person("Tom", "Hanks");
+        person1.showName();
+        Super_45.Student student1 = new Super_45.Student("Shinji", "Hirako", 3.7);
+        student1.showName(); student1.showGPA();
+        Super_45.Employee employee1 = new Super_45.Employee("Marcin", "Kowalski", 3899);
+        employee1.showName(); employee1.showSalary();
+
     }
 }
 
