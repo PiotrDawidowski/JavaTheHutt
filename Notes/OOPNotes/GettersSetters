@@ -1,0 +1,10 @@
+with getters, You can get altered data from an object, you can add characters or strings to Ints or doubles ($1000, int -> String)
+you can return parent type of a type you have (ArrayList<> can be changed to List<> and still return the data.
+
+With setters you can do widening (accept "bigger" type than defined in class):
+
+private int price;
+
+public void setPrice(double price) {
+    this.price = (int) price;  // explicit narrowing conversion
+}

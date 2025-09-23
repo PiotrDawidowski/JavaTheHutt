@@ -1,6 +1,9 @@
 import JavaTutoApps.*;
 import JavaTutoClasses.*;
 import JavaTutoOOP.*;
+import JavaTutoOOP.RuntimePolymorphism_51.*;
+import JavaTutoOOP.GetterSetter_52.*;
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -244,17 +247,40 @@ public class Main {
 //        hawk.hunt();
 
         // 50
-        Polymorphism_50 pol50 = new Polymorphism_50();
-        Polymorphism_50.Vehicle car = new Polymorphism_50.Car();
-        Polymorphism_50.Bike bike = new Polymorphism_50.Bike();
-        Polymorphism_50.Boat boat = new Polymorphism_50.Boat();
+//        Polymorphism_50 pol50 = new Polymorphism_50();
+//        Polymorphism_50.Vehicle car = new Polymorphism_50.Car();
+//        Polymorphism_50.Bike bike = new Polymorphism_50.Bike();
+//        Polymorphism_50.Boat boat = new Polymorphism_50.Boat();
+//
+//
+//        Polymorphism_50.Vehicle[] vehicles = {car, bike, boat};
+//
+//        for(Polymorphism_50.Vehicle vehicle : vehicles) {
+//            vehicle.go();
+//        }
 
+        // 51 - basically you declare reference variable "animal" that doesnt point to anything yet
+//        Scanner sc = new Scanner(System.in);
+//        Animal_51 animal;
+//        System.out.println("Would you like a dog or a cat? \n1. dog \n2. cat");
+//
+//        if (sc.nextInt() == 1) {
+//            animal = new Dog_51();
+//            animal.speak();
+//        }
+//
+//        else if (sc.nextInt() == 2) {
+//            animal = new Cat_51();
+//            animal.speak();
+//        }
 
-        Polymorphism_50.Vehicle[] vehicles = {car, bike, boat};
-
-        for(Polymorphism_50.Vehicle vehicle : vehicles) {
-            vehicle.go();
-        }
+        // 52
+        Car_52 car = new Car_52("Charger", "Yellow", 10000);
+//        System.out.println(car); // with toString overridden
+        System.out.println(car.getColor() + " " + car.getModel() + " " + car.getPrice());
+        car.setColor("Blue");
+        car.setPrice(8999);
+        System.out.println(car.getColor() + " " + car.getModel() + " " + car.getPrice());
     }
 }
 
