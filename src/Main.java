@@ -3,6 +3,7 @@ import JavaTutoClasses.*;
 import JavaTutoOOP.*;
 import JavaTutoOOP.RuntimePolymorphism_51.*;
 import JavaTutoOOP.GetterSetter_52.*;
+import JavaTutoOOP.Aggregation_53.*;
 
 import java.util.Scanner;
 import java.util.Random;
@@ -275,12 +276,24 @@ public class Main {
 //        }
 
         // 52
-        Car_52 car = new Car_52("Charger", "Yellow", 10000);
+//        Car_52 car = new Car_52("Charger", "Yellow", 10000);
 //        System.out.println(car); // with toString overridden
-        System.out.println(car.getColor() + " " + car.getModel() + " " + car.getPrice());
-        car.setColor("Blue");
-        car.setPrice(8999);
-        System.out.println(car.getColor() + " " + car.getModel() + " " + car.getPrice());
+//        System.out.println(car.getColor() + " " + car.getModel() + " " + car.getPrice());
+//        car.setColor("Blue");
+//        car.setPrice(8999);
+//        System.out.println(car.getColor() + " " + car.getModel() + " " + car.getPrice());
+        // 53
+        Book_53 book1 = new Book_53("The Fellow of the Ring", 423);
+        Book_53 book2 = new Book_53("The Two Towers", 352);
+        Book_53 book3 = new Book_53("The Return of the King", 416);
+
+        Book_53[] books = {book1, book2, book3};
+        for (Book_53 book : books) {
+            System.out.println(book.displayInfo());
+        }
+
+        Library_53 library = new Library_53("NYC Public Library", 1897, books);
+        library.displayInfo();
     }
 }
 
