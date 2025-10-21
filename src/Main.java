@@ -1,6 +1,7 @@
 import JavaTutoApps.*;
 import JavaTutoClasses.*;
 import JavaTutoOOP.*;
+import JavaTutoOOP.Composition_54.Car_54;
 import JavaTutoOOP.RuntimePolymorphism_51.*;
 import JavaTutoOOP.GetterSetter_52.*;
 import JavaTutoOOP.Aggregation_53.*;
@@ -283,17 +284,65 @@ public class Main {
 //        car.setPrice(8999);
 //        System.out.println(car.getColor() + " " + car.getModel() + " " + car.getPrice());
         // 53
-        Book_53 book1 = new Book_53("The Fellow of the Ring", 423);
-        Book_53 book2 = new Book_53("The Two Towers", 352);
-        Book_53 book3 = new Book_53("The Return of the King", 416);
+//        Book_53 book1 = new Book_53("The Fellow of the Ring", 423);
+//        Book_53 book2 = new Book_53("The Two Towers", 352);
+//        Book_53 book3 = new Book_53("The Return of the King", 416);
+//
+//        Book_53[] books = {book1, book2, book3};
+//        for (Book_53 book : books) {
+//            System.out.println(book.displayInfo());
+//        }
+//
+//        Library_53 library = new Library_53("NYC Public Library", 1897, books);
+//        library.displayInfo();
+        // 54
 
-        Book_53[] books = {book1, book2, book3};
-        for (Book_53 book : books) {
-            System.out.println(book.displayInfo());
-        }
+//        Car_54 car = new Car_54("Toyota", 2001, "V-type");
+//        System.out.println(car.engineType.type); // engineType is an object, you need to access its type directly
+//
+//        System.out.println(car.model);
+//        System.out.println(car.year);
+//        System.out.println(car.engineType.type);
+//
+//        car.engineType.start();
 
-        Library_53 library = new Library_53("NYC Public Library", 1897, books);
-        library.displayInfo();
+        // 55
+        // DEPRECATED
+//        Integer a = new Integer(123);
+//        Double b = new Double(4.3);
+//        Character c = new Character('$');
+//        Boolean d = new Boolean(true);
+
+        // Autoboxing
+        int x = 123;
+        Integer a = x;
+        Double b = 4.3;
+        Character c = '$';
+        Boolean d = true;
+        Integer e = Integer.valueOf(456);
+
+        // Unboxing
+        double b2 = b;
+
+        // toString
+        String f = Integer.toString(2);
+        String g = Character.toString('$');
+        String h = Double.toString(2.3);
+        String i = Boolean.toString(true);
+
+        // parsing, printing that gives compilation errir
+        int j = Integer.parseInt(f);
+        double k = Double.parseDouble("3.14");
+        char l = i.charAt(1);
+        boolean m = Boolean.parseBoolean("true");
+
+        char letter = 's';
+
+        System.out.println(Character.isLetter(letter));
+        System.out.println(Character.isUpperCase(letter));
+
+
+
     }
 }
 
