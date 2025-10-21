@@ -1,0 +1,4 @@
+Autoboxing examples (primitive ↔ wrapper):
+int x = 5;
+Integer y = x;   // autoboxing
+int z = y;       // unboxing

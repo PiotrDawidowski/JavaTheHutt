@@ -1,0 +1,1 @@
+Represents a "part-of" ("has-a") relationship. Allows creation of objects using smaller objects.
