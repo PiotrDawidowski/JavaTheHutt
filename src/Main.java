@@ -6,11 +6,15 @@ import JavaTutoOOP.RuntimePolymorphism_51.*;
 import JavaTutoOOP.GetterSetter_52.*;
 import JavaTutoOOP.Aggregation_53.*;
 
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.Random;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
+        Scanner sc = new Scanner(System.in);
         // 2
 //        Variables_2 obj2 = new Variables_2();
 //        obj2.Info();
@@ -314,35 +318,115 @@ public class Main {
 //        Boolean d = new Boolean(true);
 
         // Autoboxing
-        int x = 123;
-        Integer a = x;
-        Double b = 4.3;
-        Character c = '$';
-        Boolean d = true;
-        Integer e = Integer.valueOf(456);
+//        int x = 123;
+//        Integer a = x;
+//        Double b = 4.3;
+//        Character c = '$';
+//        Boolean d = true;
+//        Integer e = Integer.valueOf(456);
+//
+//        // Unboxing
+//        double b2 = b;
+//
+//        // toString
+//        String f = Integer.toString(2);
+//        String g = Character.toString('$');
+//        String h = Double.toString(2.3);
+//        String i = Boolean.toString(true);
+//
+//        // parsing, printing that gives compilation errir
+//        int j = Integer.parseInt(f);
+//        double k = Double.parseDouble("3.14");
+//        char l = i.charAt(1);
+//        boolean m = Boolean.parseBoolean("true");
+//
+//        char letter = 's';
+//
+//        System.out.println(Character.isLetter(letter));
+//        System.out.println(Character.isUpperCase(letter));
 
-        // Unboxing
-        double b2 = b;
+        // 56
 
-        // toString
-        String f = Integer.toString(2);
-        String g = Character.toString('$');
-        String h = Double.toString(2.3);
-        String i = Boolean.toString(true);
+//        ArrayList<Integer> list1 = new ArrayList<>();
+//        list1.add(3);
+//        list1.add(1);
+//        list1.add(2);
 
-        // parsing, printing that gives compilation errir
-        int j = Integer.parseInt(f);
-        double k = Double.parseDouble("3.14");
-        char l = i.charAt(1);
-        boolean m = Boolean.parseBoolean("true");
+//        ArrayList<String> fruits = new ArrayList<>();
+//        fruits.add("Apple");
+//        fruits.add("Orange");
+//        fruits.add("Coconut");
+//        fruits.add("Pineapple");
+//        fruits.remove(0);
+//        fruits.removeFirst();
+//        fruits.removeLast();
+//        fruits.set(0, "Strawberry");
+//        System.out.println(fruits);
+//        Collections.sort(fruits);
 
-        char letter = 's';
+//        for (String fruit : fruits) {
+//            System.out.println(fruit);
+//        }
+//        ArrayList<String> foods = new ArrayList<>();
+//        System.out.println("Enter the # of fruits you'd like to enter: ");
+//        int numOfFoods = sc.nextInt();
+//        sc.nextLine();
+//
+//        for (int i = 1; i <= numOfFoods; i++) {
+//            System.out.print("Enter food #" + i + ": ");
+//            foods.add(sc.nextLine());
+//        }
+//        System.out.println(foods);
+//
+//        sc.close();
 
-        System.out.println(Character.isLetter(letter));
-        System.out.println(Character.isUpperCase(letter));
+        // 57 - Exceptions
+//        try {
+//            int x = 1/0;
+//        }
+//        catch(ArithmeticException e) {
+//            System.out.println("you cant divide by zero!");
+//        }
+//        finally {
+//            System.out.println("We're done");
+//        }
 
+        // 58 - text files
+        // FileWriter <-, BufferedWriter, PrintWriter, FileOutputStream
 
+//        String filePath = "D:\\Pulpit\\test.txt";
+//        String fileContent = """
+//                Time keeps passing,
+//                Sky is closing in,
+//                Cannot wait anymore.
+//                """;
+//
+//        try(FileWriter writer = new FileWriter(filePath)) {
+//            writer.write(fileContent);
+//            System.out.println("File has been written");
+//        }
+//        catch(FileNotFoundException e) {
+//            System.out.println("Could not locate file location");
+//        }
+//        catch(IOException e) {
+//            System.out.println("Error");
+//        }
 
+        // 59 - reading text files
+//        String filePath = "D:\\Pulpit\\test.txt";
+//
+//        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+//            String line;
+//            while((line = reader.readLine()) != null) {
+//                System.out.println(line);
+//            }
+//        }
+//        catch (FileNotFoundException e) {
+//            System.out.println("File not found");
+//        }
+//        catch (IOException e) {
+//            System.out.println("Something went wrong.");
+//        }
     }
 }
 
